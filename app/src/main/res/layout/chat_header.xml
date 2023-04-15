@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/custom_border"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:id="@+id/back_arrow"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            app:tint="#696C71" />
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="73dp"
+            android:id="@+id/product_image"
+            android:layout_toEndOf="@id/back_arrow"
+            android:src="@drawable/nav_photo"
+            android:background="@drawable/image_border"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Валерия"
+            android:textSize="20dp"
+            android:textColor="@color/lavender"
+            android:id="@+id/chat_image_name"
+            android:layout_toEndOf="@id/product_image"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фотоаппарат Fujifilm Instax mini 11"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#8E9094"
+            android:id="@+id/chat_image_productName"
+            android:layout_toEndOf="@id/product_image"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>
